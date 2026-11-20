@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://services-ac-dev-01.highwire.org:8080/cyclades/subapi?action=getLoginCookie&data-type=xml&publisher-id=isa&membershipno=VIRENDRA11
+method: GET
+queryParams:
+  - key: action
+    value: getLoginCookie
+    disabled: false
+    description: ""
+  - key: data-type
+    value: xml
+    disabled: false
+    description: ""
+  - key: publisher-id
+    value: isa
+    disabled: false
+    description: ""
+  - key: membershipno
+    value: VIRENDRA11
+    disabled: false
+    description: ""
+order: 4503409893535576

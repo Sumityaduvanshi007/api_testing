@@ -1,0 +1,5 @@
+$kind: http-request
+description: Metrics list
+url: "{{a4d_base}}/actuator/metrics"
+method: GET
+order: 17000

@@ -1,0 +1,5 @@
+$kind: http-request
+description: Aggregate health (may be DOWN if A4D dependency unavailable)
+url: "{{consumer_base}}/actuator/health"
+method: GET
+order: 1000

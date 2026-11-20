@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{consumer_base_url}}/actuator/metrics"
+method: GET
+order: 5000

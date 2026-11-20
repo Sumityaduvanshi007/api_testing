@@ -1,0 +1,5 @@
+$kind: http-request
+description: Application info
+url: "{{consumer_base}}/actuator/info"
+method: GET
+order: 4000

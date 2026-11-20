@@ -1,0 +1,10 @@
+$kind: collection
+description: ""
+variables:
+  a4d_base_url: http://localhost:8081
+  hwdcm_base_url: http://hwdcm-dev.highwire.org
+  consumer_base_url: http://a4d-dev.highwire.org
+  username: highwire
+  password: highwire
+  corpus_path: //genesdev
+  logger_name: org.highwire.platform.a4d

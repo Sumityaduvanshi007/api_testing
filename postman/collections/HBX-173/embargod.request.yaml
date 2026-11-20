@@ -1,0 +1,31 @@
+$kind: http-request
+url: http://embargod-dev.highwire.org/validate/apaths
+method: POST
+body:
+  type: text
+  content: "/rna/32/4/409.atom\r
+
+    /rna/32/4/412.atom\r
+
+    /rna/32/4/428.atom\r
+
+    /genome/36/3/487.atom\r
+
+    /genome/36/3/472.atom\r
+
+    /genome/36/3/1234.atom"
+scripts:
+  - type: afterResponse
+    code: "const requestedApath = \"/hwdjpt/100/100/101.atom\";\r
+
+      const body = pm.response.json();\r
+
+      \r
+
+      pm.test(\"Invalid apath must not return success\", function () {\r
+
+      \    pm.expect(body.error).to.eql(true);\r
+
+      });"
+    language: text/javascript
+order: 3000

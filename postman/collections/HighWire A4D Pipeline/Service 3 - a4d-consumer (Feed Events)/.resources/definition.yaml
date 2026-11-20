@@ -1,0 +1,3 @@
+$kind: collection
+description: Local base URL defaults to [http://a4d-dev.highwire.org](http://a4d-dev.highwire.org). Kafka priority consumer and health/circuit breaker monitoring. Kafka produce/consume operations are documented as terminal commands, not HTTP endpoints.
+order: 3000

@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{hwdcm_base_url}}/actuator/loggers"
+method: GET
+auth:
+  type: basic
+  credentials:
+    username: Highwire
+    password: Highwire@123
+order: 6000

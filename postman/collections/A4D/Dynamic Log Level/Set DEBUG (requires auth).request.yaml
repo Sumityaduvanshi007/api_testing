@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://a4d-dev.highwire.org/actuator/loggers/org.highwire.platform.a4d
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: '{"configuredLevel":"DEBUG"}'
+order: 1000

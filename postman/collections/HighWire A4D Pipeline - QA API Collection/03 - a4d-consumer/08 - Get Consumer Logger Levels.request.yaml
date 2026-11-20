@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{consumer_base_url}}/actuator/loggers"
+method: GET
+auth:
+  type: basic
+  credentials:
+    username: "{{username}}"
+    password: "{{password}}"
+order: 8000

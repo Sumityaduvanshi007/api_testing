@@ -1,0 +1,5 @@
+$kind: http-request
+description: List priority overrides (HTML)
+url: "{{a4d_base}}/corpus/priority/"
+method: GET
+order: 10000

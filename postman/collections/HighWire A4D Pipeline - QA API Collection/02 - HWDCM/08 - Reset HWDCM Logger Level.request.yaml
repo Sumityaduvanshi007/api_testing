@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{hwdcm_base_url}}/actuator/loggers/org.highwire.platform.a4d"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: '{"configuredLevel":null}'
+auth:
+  type: basic
+  credentials:
+    username: Highwire
+    password: Highwire@123
+order: 8000

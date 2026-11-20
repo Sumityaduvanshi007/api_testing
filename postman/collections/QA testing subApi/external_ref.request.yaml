@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://services-ac-dev-01.highwire.org:8080/cyclades/subapi?action=external_ref&access_num=10.1021/bi972394l&link_type=DOI
+method: GET
+queryParams:
+  action: external_ref
+  access_num: 10.1021/bi972394l
+  link_type: DOI
+order: 754845144630239

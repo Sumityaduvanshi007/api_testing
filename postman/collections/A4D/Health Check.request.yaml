@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://a4d-dev.highwire.org/actuator/health
+method: GET
+order: 2000

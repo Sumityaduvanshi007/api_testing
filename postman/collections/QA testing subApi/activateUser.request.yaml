@@ -1,0 +1,43 @@
+$kind: http-request
+url: http://services-ac-dev-01.highwire.org:8080/cyclades/subapi?action=activateUser&publisher-id=isa&data-type=xml
+method: POST
+headers:
+  Content-Type: application/xml
+queryParams:
+  action: activateUser
+  publisher-id: isa
+  data-type: xml
+body:
+  type: json
+  content: "<ac:subscribers xmlns:ac=\"http://schema.highwire.org/Subscriber\"\r
+
+    \                xmlns:rp=\"http://schema.highwire.org/Person\">\r
+
+    \  <ac:subscriber membershipNo=\"VIRENDRA111\"\r
+
+    \                 userType=\"INDV\"\r
+
+    \                 subscriberType=\"M\"\r
+
+    \                 login=\"virendra111\"\r
+
+    \                 password=\"virendra111\">\r
+
+    \    <rp:person>\r
+
+    \      <rp:name>\r
+
+    \        <rp:firstname>virendraa</rp:firstname>\r
+
+    \        <rp:lastname>kumarr</rp:lastname>\r
+
+    \      </rp:name>\r
+
+    \      <rp:email>virenn.kumar@mpslimited.com</rp:email>\r
+
+    \    </rp:person>\r
+
+    \  </ac:subscriber>\r
+
+    </ac:subscribers>\r\n"
+order: 4502263277655509

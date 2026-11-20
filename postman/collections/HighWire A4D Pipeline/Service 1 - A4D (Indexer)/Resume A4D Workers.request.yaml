@@ -1,0 +1,11 @@
+$kind: http-request
+description: Resume workers
+url: "{{a4d_base}}/"
+method: POST
+headers:
+  Content-Type: application/x-www-form-urlencoded
+body:
+  type: urlencoded
+  content:
+    action: resume
+order: 15000

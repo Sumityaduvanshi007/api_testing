@@ -1,0 +1,20 @@
+$kind: http-request
+url: http://services-ac-dev-01.highwire.org:8080/cyclades/subapi?action=getLoginCookie&data-type=xml&publisher-id=isa&membershipno=KHUSHAL07
+method: GET
+queryParams:
+  - key: action
+    value: getLoginCookie
+  - key: domain
+    value: ""
+    disabled: true
+  - key: ip
+    value: ""
+    disabled: true
+  - key: data-type
+    value: xml
+    description: XML only.
+  - key: publisher-id
+    value: isa
+  - key: membershipno
+    value: KHUSHAL07
+order: 3000

@@ -1,0 +1,5 @@
+$kind: http-request
+description: Checks A4D and circuit-breaker dependency health. Test with A4D available and unavailable.
+url: "{{consumer_base_url}}/actuator/health/dependencies"
+method: GET
+order: 3000

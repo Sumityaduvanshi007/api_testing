@@ -1,0 +1,17 @@
+$kind: http-request
+description: |-
+  Upload a text file with one atom path per line. Example: /genesdev/1.atom
+  /jcode/2.atom
+url: "{{a4d_base}}/queue/bypass/"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: paths
+      src:
+        - ""
+        - /C:/Users/Virendra.Kumar/Documents/mheasworks.txt
+      description: Select a text file with one content path per line
+      disabled: false
+order: 9000

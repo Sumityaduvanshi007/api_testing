@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://services-ac-prod-01.highwire.org:8080/cyclades/subapi?action=lookup&publisher-id=isa&email=blackhole@highwire.stanford.edu&expand=true&data-type=json
+method: GET
+queryParams:
+  action: lookup
+  publisher-id: isa
+  email: blackhole@highwire.stanford.edu
+  expand: "true"
+  data-type: json
+order: 12000

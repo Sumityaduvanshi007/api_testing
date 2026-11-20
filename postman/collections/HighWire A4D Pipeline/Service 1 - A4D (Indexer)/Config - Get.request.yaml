@@ -1,0 +1,5 @@
+$kind: http-request
+description: Current configuration
+url: "{{a4d_base}}/config"
+method: GET
+order: 2000

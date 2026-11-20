@@ -1,0 +1,32 @@
+$kind: collection
+description: |
+  A4D base URL configured for Dev: http://a4d-dev.highwire.org. HWDCM and a4d-consumer base URLs remain local defaults because their Dev URLs were not provided.
+
+  Postman collection organized by service, based on SERVICES_FLOW_DOCUMENTATION. Local base URLs are configurable collection variables. Kafka CLI tests are included in the collection description below.
+
+  Kafka CLI scenarios (localhost:9092):
+  - HWDCM producer: kafka-console-producer --bootstrap-server localhost:9092 --topic atom.drupal ; send {"path":"/jcode/1.atom","types":["updated"]}
+  - Filter test: send {"path":"/jcode/1.html","types":["updated"]} to atom.drupal
+  - High priority producer: kafka-console-producer --bootstrap-server localhost:9092 --topic appl.a4d.high-priority --property parse.key=true --property key.separator=: ; publish key jcode with event JSON (see documentation)
+  - Processed: kafka-console-consumer --bootstrap-server localhost:9092 --topic appl.feeds.processed --from-beginning
+  - Retry: kafka-console-consumer --bootstrap-server localhost:9092 --topic appl.feeds.process --from-beginning
+  - Failed: kafka-console-consumer --bootstrap-server localhost:9092 --topic appl.a4d.failed --from-beginning
+  - Topics: atom.drupal; appl.a4d.high-priority; appl.a4d.low-priority; appl.feeds.process; appl.feeds.processed; appl.a4d.failed
+
+  Port note: local testing guide maps A4D=8081, HWDCM=8080, consumer=8082. API reference table has a conflicting consumer port of 8081. This collection follows the local testing guide; verify the actual local config.
+variables:
+  - key: a4d_base
+    value: http://a4d-dev.highwire.org
+    disabled: false
+    secret: false
+  - key: hwdcm_base
+    value: http://localhost:8080
+    disabled: false
+    secret: false
+  - key: consumer_base
+    value: http://localhost:8082
+    disabled: false
+    secret: false
+  - key: auth_password_01nm
+    secret: true
+    disabled: false

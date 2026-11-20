@@ -1,0 +1,5 @@
+$kind: http-request
+description: Delete override
+url: "{{a4d_base}}/corpus/priority//genesdev"
+method: DELETE
+order: 13000

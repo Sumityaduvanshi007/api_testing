@@ -1,0 +1,14 @@
+$kind: http-request
+description: Upload a text file using multipart/form-data. The form-data field name must be paths. The file should contain one .atom path per line. Expected results include indexed, skipped (scolaris), or error responses.
+url: "{{a4d_base_url}}/queue/bypass/"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: paths
+      src:
+        - /C:/Users/Virendra.Kumar/Documents/mheasworks.txt
+      description: ""
+      disabled: false
+order: 11000

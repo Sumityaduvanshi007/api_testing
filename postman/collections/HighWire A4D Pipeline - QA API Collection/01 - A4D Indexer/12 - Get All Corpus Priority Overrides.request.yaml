@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{a4d_base_url}}/corpus/priority/"
+method: GET
+order: 12000

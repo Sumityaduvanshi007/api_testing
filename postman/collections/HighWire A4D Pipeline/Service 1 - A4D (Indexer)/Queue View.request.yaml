@@ -1,0 +1,5 @@
+$kind: http-request
+description: Queue view (HTML)
+url: "{{a4d_base}}/queue/"
+method: GET
+order: 7000

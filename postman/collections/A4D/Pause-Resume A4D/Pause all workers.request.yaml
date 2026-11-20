@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://a4d-dev.highwire.org
+method: POST
+body:
+  type: urlencoded
+  content:
+    action: pause
+order: 1000

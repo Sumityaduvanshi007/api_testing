@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://services-ac-dev-01.highwire.org:8080/cyclades/subapi?action=sayhello&name=subapi&data-type=xml
+method: GET
+queryParams:
+  action: sayhello
+  name: subapi
+  data-type: xml
+order: 791636684490283

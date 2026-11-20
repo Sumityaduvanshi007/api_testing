@@ -1,0 +1,15 @@
+$kind: http-request
+description: Checks whether the JVM is running. Documentation states this remains UP when the A4D dependency is unavailable but the JVM is running.
+url: "{{consumer_base_url}}/actuator/health/liveness"
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Liveness endpoint returns HTTP 200', function () {
+          pm.response.to.have.status(200);
+      });
+      pm.test('Liveness status is UP', function () {
+          pm.expect(pm.response.json().status).to.eql('UP');
+      });
+    language: text/javascript
+order: 2000

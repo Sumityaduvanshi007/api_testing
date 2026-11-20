@@ -1,0 +1,5 @@
+$kind: http-request
+description: Get priority override for genesdev
+url: "{{a4d_base}}/corpus/priority//genesdev"
+method: GET
+order: 11000

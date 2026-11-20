@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://services-ac-dev-01.highwire.org:8080/cyclades?action=reload
+method: GET
+queryParams:
+  action: reload
+order: 759879228482377

@@ -1,0 +1,36 @@
+$kind: http-request
+url: http://services-ac-dev-01.highwire.org:8080/cyclades/subapi?action=updateUser&publisher-id=isa&data-type=xml
+method: POST
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: action
+    value: updateUser
+  - key: no-lookup
+    value: "true"
+    disabled: true
+    description: Optional. Skip the lookup before update.
+  - key: publisher-id
+    value: isa
+  - key: data-type
+    value: xml
+body:
+  type: xml
+  content: |-
+    <ac:subscribers xmlns:ac="http://schema.highwire.org/Subscriber"
+                    xmlns:rp="http://schema.highwire.org/Person">
+      <ac:subscriber userId="615"
+                     membershipNo="KHUSHAL07"
+                     userType="INDV"
+                     subscriberType="P"
+                     login="khushal7">
+        <rp:person>
+          <rp:name>
+            <rp:firstname>khushal</rp:firstname>
+            <rp:lastname>TEST01</rp:lastname>
+          </rp:name>
+          <rp:email>khushal.babu@highwirepress.com</rp:email>
+        </rp:person>
+      </ac:subscriber>
+    </ac:subscribers>
+order: 8000

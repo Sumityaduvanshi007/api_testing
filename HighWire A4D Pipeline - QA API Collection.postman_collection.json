@@ -1,0 +1,635 @@
+{
+  "info": {
+    "_postman_id": "270fECA46F9EcCaE14CaAA0A",
+    "name": "HighWire A4D Pipeline - QA API Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58605332"
+  },
+  "item": [
+    {
+      "name": "01 - A4D Indexer",
+      "_postman_id": "db8ad17e-989f-43fb-ae57-3107714c03db",
+      "item": [
+        {
+          "name": "01 - Get Home Page",
+          "_postman_id": "2e7659e9-ad5f-474d-809e-c686190a0775",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/",
+              "host": [
+                "{{a4d_base_url}}/"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "02 - Pause A4D Workers",
+          "_postman_id": "f4d2139f-d540-4263-80d6-9462f5fcea24",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/",
+              "host": [
+                "{{a4d_base_url}}/"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "03 - Resume A4D Workers",
+          "_postman_id": "c3a70db7-6f27-402c-b4cc-b8fd4954d8e7",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/",
+              "host": [
+                "{{a4d_base_url}}/"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "04 - Get A4D Configuration",
+          "_postman_id": "38501270-90d5-4050-882b-aa08057dc983",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/config",
+              "host": [
+                "{{a4d_base_url}}/config"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "05 - Update A4D Configuration",
+          "_postman_id": "39a0cdb9-3e12-420a-88f6-fe0469553aea",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/config",
+              "host": [
+                "{{a4d_base_url}}/config"
+              ]
+            },
+            "description": "Configuration update API. The source documentation does not provide the exact JSON schema. Confirm the supported configuration fields before sending a payload. Test valid partial updates, invalid fields, empty body, malformed JSON and configuration reload behavior after the schema is confirmed."
+          },
+          "response": []
+        },
+        {
+          "name": "06 - Reload Scolaris Configuration",
+          "_postman_id": "f51f8804-3010-4155-8967-bfef53ab32f1",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/config/scolaris/reload",
+              "host": [
+                "{{a4d_base_url}}/config/scolaris/reload"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "07 - Get Active Extractor URL",
+          "_postman_id": "63e22f8e-2846-4e22-a917-9c56f2b7a1a7",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/config/extractor",
+              "host": [
+                "{{a4d_base_url}}/config/extractor"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "08 - Get A4D Status",
+          "_postman_id": "18b37318-1c6b-4078-a49d-972b43260dcc",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/status",
+              "host": [
+                "{{a4d_base_url}}/status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "09 - Get Queue",
+          "_postman_id": "c048284c-aa89-406f-8a35-6a1c3e1e5586",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/queue/",
+              "host": [
+                "{{a4d_base_url}}/queue/"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "10 - Enqueue Stale Events",
+          "_postman_id": "d5b9c153-449b-41a9-b1de-f88d142f3bd9",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/queue/",
+              "host": [
+                "{{a4d_base_url}}/queue/"
+              ]
+            },
+            "description": "Enqueues stale events. The source documentation does not specify the request body or exact parameter schema. Confirm the API contract before preparing positive and negative payload tests."
+          },
+          "response": []
+        },
+        {
+          "name": "11 - Bypass Indexing",
+          "_postman_id": "986199a1-d6c4-454c-8ca2-663828cff900",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/queue/bypass/",
+              "host": [
+                "{{a4d_base_url}}/queue/bypass/"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "12 - Get All Corpus Priority Overrides",
+          "_postman_id": "92644690-3765-4e4c-95f9-a72f047aadf7",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/corpus/priority/",
+              "host": [
+                "{{a4d_base_url}}/corpus/priority/"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "13 - Get Corpus Priority",
+          "_postman_id": "a1b5d659-0d50-44fb-ac58-7007e4802827",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/corpus/priority/jwatch.atom",
+              "host": [
+                "{{a4d_base_url}}/corpus/priority/jwatch.atom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "14 - Set Corpus Priority",
+          "_postman_id": "51d77b9a-b111-4312-b6f9-3ba46df4abf7",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/corpus/priority/bmjqir.atom",
+              "host": [
+                "{{a4d_base_url}}/corpus/priority/bmjqir.atom"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "15 - Delete Corpus Priority Override",
+          "_postman_id": "2e2420d1-ca08-4e3d-a68d-e8fdd31fa4fb",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/corpus/priority//genesdev",
+              "host": [
+                "{{a4d_base_url}}/corpus/priority//genesdev"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "16 - A4D Health Check",
+          "_postman_id": "68d9c230-b065-4c97-b628-01fea9a7dad5",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/actuator/health",
+              "host": [
+                "{{a4d_base_url}}/actuator/health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "17 - A4D Application Info",
+          "_postman_id": "17cbafd2-a9bf-415b-b0ca-a5c9ce6d1f15",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/actuator/info",
+              "host": [
+                "{{a4d_base_url}}/actuator/info"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "18 - A4D Metrics",
+          "_postman_id": "895f6dc4-d14c-4236-9860-401746acf32c",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/actuator/metrics",
+              "host": [
+                "{{a4d_base_url}}/actuator/metrics"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "19 - A4D Prometheus Metrics",
+          "_postman_id": "4de0a22d-0518-4369-b6c5-4bf50eeaf21b",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/actuator/prometheus",
+              "host": [
+                "{{a4d_base_url}}/actuator/prometheus"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "20 - Get A4D Logger Levels",
+          "_postman_id": "cf9a484b-d60d-477f-be4a-1378f01a0dd2",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/actuator/loggers",
+              "host": [
+                "{{a4d_base_url}}/actuator/loggers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "21 - Update A4D Logger Level - DEBUG",
+          "_postman_id": "c328aa71-92fd-4773-9218-e44ac15dfea8",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/actuator/loggers/org.highwire.platform.a4d",
+              "host": [
+                "{{a4d_base_url}}/actuator/loggers/org.highwire.platform.a4d"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "22 - Reset A4D Logger Level",
+          "_postman_id": "a2694373-5056-4ca0-9b02-1ac623e0b60e",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{a4d_base_url}}/actuator/loggers/org.highwire.platform.a4d",
+              "host": [
+                "{{a4d_base_url}}/actuator/loggers/org.highwire.platform.a4d"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "02 - HWDCM",
+      "_postman_id": "26740b25-990a-4788-8f2c-bfa3008bbf81",
+      "item": [
+        {
+          "name": "01 - Get HWDCM Configuration",
+          "_postman_id": "9fa9a1a7-9c34-433f-8f48-e96776ade799",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{hwdcm_base_url}}/config",
+              "host": [
+                "{{hwdcm_base_url}}/config"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "02 - HWDCM Health Check",
+          "_postman_id": "501c8fd5-bbf9-4e88-93ee-70ec8330b780",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{hwdcm_base_url}}/actuator/health",
+              "host": [
+                "{{hwdcm_base_url}}/actuator/health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "03 - HWDCM Application Info",
+          "_postman_id": "bc5cf8fc-a973-4192-80da-51961f809bdf",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{hwdcm_base_url}}/actuator/info",
+              "host": [
+                "{{hwdcm_base_url}}/actuator/info"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "04 - HWDCM Metrics",
+          "_postman_id": "89f69840-359d-4da2-bc63-f86151897e94",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{hwdcm_base_url}}/actuator/metrics",
+              "host": [
+                "{{hwdcm_base_url}}/actuator/metrics"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "05 - HWDCM Prometheus Metrics",
+          "_postman_id": "b81fe421-ae03-4a02-abac-da4bb6a90c92",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{hwdcm_base_url}}/actuator/prometheus",
+              "host": [
+                "{{hwdcm_base_url}}/actuator/prometheus"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "06 - Get HWDCM Logger Levels",
+          "_postman_id": "03d1e246-c3b1-4e01-8f70-e4a0a96da1bd",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{hwdcm_base_url}}/actuator/loggers",
+              "host": [
+                "{{hwdcm_base_url}}/actuator/loggers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "07 - Update HWDCM Logger Level - DEBUG",
+          "_postman_id": "c5c340d1-78c9-4687-a24f-ba63c70e6039",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{hwdcm_base_url}}/actuator/loggers/org.highwire.platform.a4d",
+              "host": [
+                "{{hwdcm_base_url}}/actuator/loggers/org.highwire.platform.a4d"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "08 - Reset HWDCM Logger Level",
+          "_postman_id": "79773c9f-1d3b-4a32-86dc-9591808351af",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{hwdcm_base_url}}/actuator/loggers/org.highwire.platform.a4d",
+              "host": [
+                "{{hwdcm_base_url}}/actuator/loggers/org.highwire.platform.a4d"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "03 - a4d-consumer",
+      "_postman_id": "543a708a-ac8a-4f9f-a29f-241d1f1659e1",
+      "item": [
+        {
+          "name": "01 - Consumer Aggregate Health",
+          "_postman_id": "42676c29-7acd-4677-9796-7de321c9e6d7",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{consumer_base_url}}/actuator/health",
+              "host": [
+                "{{consumer_base_url}}/actuator/health"
+              ]
+            },
+            "description": "Checks overall consumer health, including dependencies. Documentation states this can return UP or DOWN (503)."
+          },
+          "response": []
+        },
+        {
+          "name": "02 - Consumer Liveness Check",
+          "_postman_id": "33d1045e-8863-4e79-a735-9e6ae6fe502e",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{consumer_base_url}}/actuator/health/liveness",
+              "host": [
+                "{{consumer_base_url}}/actuator/health/liveness"
+              ]
+            },
+            "description": "Checks whether the JVM is running. Documentation states this remains UP when the A4D dependency is unavailable but the JVM is running."
+          },
+          "response": []
+        },
+        {
+          "name": "03 - Consumer Dependencies Health",
+          "_postman_id": "21742e5b-8209-4dab-b77f-cf4a1fdf7d1f",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{consumer_base_url}}/actuator/health/dependencies",
+              "host": [
+                "{{consumer_base_url}}/actuator/health/dependencies"
+              ]
+            },
+            "description": "Checks A4D and circuit-breaker dependency health. Test with A4D available and unavailable."
+          },
+          "response": []
+        },
+        {
+          "name": "04 - Consumer Application Info",
+          "_postman_id": "9e428bf2-3068-48fc-877c-709600f2151f",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{consumer_base_url}}/actuator/info",
+              "host": [
+                "{{consumer_base_url}}/actuator/info"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "05 - Consumer Metrics",
+          "_postman_id": "7c20fabe-8171-4ea0-baf5-41d81dd7e86e",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{consumer_base_url}}/actuator/metrics",
+              "host": [
+                "{{consumer_base_url}}/actuator/metrics"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "06 - Consumer Prometheus Metrics",
+          "_postman_id": "720d9b2c-3516-40fd-856c-2057a0e8c7cb",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{consumer_base_url}}/actuator/prometheus",
+              "host": [
+                "{{consumer_base_url}}/actuator/prometheus"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "07 - Consumer Circuit Breaker Status",
+          "_postman_id": "0f4f69e2-8427-4119-bbc9-6c1dab1a0a35",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{consumer_base_url}}/actuator/circuitbreakers",
+              "host": [
+                "{{consumer_base_url}}/actuator/circuitbreakers"
+              ]
+            },
+            "description": "Check circuit-breaker state with A4D available and unavailable. Documented states include OPEN, HALF_OPEN and CLOSED."
+          },
+          "response": []
+        },
+        {
+          "name": "08 - Get Consumer Logger Levels",
+          "_postman_id": "28e22246-600d-4dc9-8254-3f21d42669bb",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{consumer_base_url}}/actuator/loggers",
+              "host": [
+                "{{consumer_base_url}}/actuator/loggers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "09 - Update Consumer Logger Level - DEBUG",
+          "_postman_id": "e054ed06-1607-4070-bb85-a51717a5bf39",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{consumer_base_url}}/actuator/loggers/org.highwire.platform.a4d",
+              "host": [
+                "{{consumer_base_url}}/actuator/loggers/org.highwire.platform.a4d"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "10 - Reset Consumer Logger Level",
+          "_postman_id": "5c137c43-29d1-40fd-86f6-836ad0ab4d7f",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{consumer_base_url}}/actuator/loggers/org.highwire.platform.a4d",
+              "host": [
+                "{{consumer_base_url}}/actuator/loggers/org.highwire.platform.a4d"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": []
+}

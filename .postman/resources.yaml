@@ -1,0 +1,17 @@
+# Use this workspace to collaborate
+workspace:
+  id: 3bbf8af5-02fa-4abb-8928-d672d234df5c
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/subapi: 58391905-c20d-4944-a4b8-25ce88009a38
+    ../postman/collections/HighWire A4D Pipeline: 131ff02a-031e-4834-b275-044e5b1685c5
+    ../postman/collections/HighWire A4D Pipeline - QA API Collection: 57ae97c7-8a13-4e6c-8f64-5ce162968246
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/

@@ -1,0 +1,10 @@
+$kind: http-request
+description: Set priority 0-127; body is plain text
+url: "{{a4d_base}}/corpus/priority//genesdev"
+method: PUT
+headers:
+  Content-Type: text/plain
+body:
+  type: text
+  content: "4"
+order: 12000

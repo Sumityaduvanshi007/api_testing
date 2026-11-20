@@ -1,0 +1,5 @@
+$kind: http-request
+description: Prometheus metrics
+url: "{{hwdcm_base}}/actuator/prometheus"
+method: GET
+order: 5000

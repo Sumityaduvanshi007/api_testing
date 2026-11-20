@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{a4d_base_url}}/corpus/priority/jwatch.atom"
+method: GET
+order: 13000

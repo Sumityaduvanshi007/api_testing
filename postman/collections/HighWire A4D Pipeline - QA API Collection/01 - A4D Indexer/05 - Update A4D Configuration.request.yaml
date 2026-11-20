@@ -1,0 +1,10 @@
+$kind: http-request
+description: Configuration update API. The source documentation does not provide the exact JSON schema. Confirm the supported configuration fields before sending a payload. Test valid partial updates, invalid fields, empty body, malformed JSON and configuration reload behavior after the schema is confirmed.
+url: "{{a4d_base_url}}/config"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{}"
+order: 5000

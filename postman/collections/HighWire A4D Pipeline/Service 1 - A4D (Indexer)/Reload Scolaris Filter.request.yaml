@@ -1,0 +1,5 @@
+$kind: http-request
+description: Reload Scolaris filter
+url: "{{a4d_base}}/config/scolaris/reload"
+method: POST
+order: 4000

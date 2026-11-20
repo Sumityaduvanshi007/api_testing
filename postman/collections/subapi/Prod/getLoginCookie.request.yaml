@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://services-ac-prod-01.highwire.org:8080/cyclades/subapi?action=getLoginCookie&publisher-id=ajhp&membershipno=TDDT&data-type=xml
+method: GET
+queryParams:
+  - key: action
+    value: getLoginCookie
+  - key: publisher-id
+    value: ajhp
+    description: Needs ac.webapp.uri.<publisher-id> in subapi.properties.
+  - key: membershipno
+    value: TDDT
+  - key: domain
+    value: ""
+    disabled: true
+  - key: ip
+    value: ""
+    disabled: true
+  - key: data-type
+    value: xml
+    description: XML only.
+order: 3000

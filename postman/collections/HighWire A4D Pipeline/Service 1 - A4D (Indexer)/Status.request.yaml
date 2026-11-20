@@ -1,0 +1,5 @@
+$kind: http-request
+description: Queue load and counters
+url: "{{a4d_base}}/status"
+method: GET
+order: 6000

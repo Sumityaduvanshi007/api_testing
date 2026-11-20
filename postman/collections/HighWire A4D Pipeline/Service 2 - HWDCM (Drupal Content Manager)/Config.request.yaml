@@ -1,0 +1,5 @@
+$kind: http-request
+description: Verify Kafka topic and SMART settings; local dry-run expected SmartLaunchJobs=false and KafkaTopic=atom.drupal
+url: "{{hwdcm_base}}/config"
+method: GET
+order: 2000

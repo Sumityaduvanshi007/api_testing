@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://services-ac-dev-01.highwire.org:8080/cyclades/subapi?action=updateRieventExternalId&publisher-id=isa&oldUserId=1001&newUserId=2002&data-type=json
+method: GET
+queryParams:
+  action: updateRieventExternalId
+  publisher-id: isa
+  oldUserId: "1001"
+  newUserId: "2002"
+  data-type: json
+order: 4000

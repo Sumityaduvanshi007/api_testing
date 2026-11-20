@@ -1,0 +1,33 @@
+$kind: http-request
+url: http://services-ac-dev-01.highwire.org:8080/cyclades/subapi?action=registerUser&publisher-id=isa&data-type=xml
+method: POST
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: action
+    value: registerUser
+  - key: publisher-id
+    value: isa
+  - key: data-type
+    value: xml
+    description: json or xml. Body must match.
+body:
+  type: xml
+  content: |-
+    <ac:subscribers xmlns:ac="http://schema.highwire.org/Subscriber"
+                    xmlns:rp="http://schema.highwire.org/Person">
+      <ac:subscriber membershipNo="KHUSHAL005"
+                     userType="INDV"
+                     subscriberType="P"
+                     login="khushal05"
+                     password="password">
+        <rp:person>
+          <rp:name>
+            <rp:firstname>khushal</rp:firstname>
+            <rp:lastname>TEST</rp:lastname>
+          </rp:name>
+          <rp:email>khushal.babu@highwirepress.com</rp:email>
+        </rp:person>
+      </ac:subscriber>
+      </ac:subscribers>
+order: 10000

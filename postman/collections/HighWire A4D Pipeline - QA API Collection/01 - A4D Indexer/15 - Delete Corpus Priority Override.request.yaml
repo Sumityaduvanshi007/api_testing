@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{a4d_base_url}}/corpus/priority//genesdev"
+method: DELETE
+order: 15000

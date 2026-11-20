@@ -1,0 +1,5 @@
+$kind: http-request
+description: Prometheus scrape output
+url: "{{a4d_base}}/actuator/prometheus"
+method: GET
+order: 18000

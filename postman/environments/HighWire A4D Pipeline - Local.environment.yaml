@@ -1,0 +1,19 @@
+name: HighWire A4D Pipeline - Local
+values:
+  - key: a4d_base_url
+    value: 'http://a4d-dev.highwire.org'
+  - key: hwdcm_base_url
+    value: 'http://a4d-dev.highwire.org'
+  - key: consumer_base_url
+    value: 'http://a4d-dev.highwire.org'
+  - key: corpus
+    value: genesdev
+  - key: a4d_username
+    value: highwire
+  - key: a4d_password
+    value: highwire
+  - key: log_level
+    value: DEBUG
+  - key: extractor_url
+    value: 'http://a4d-extract-dev.highwire.org/policy/drupal-48/'
+color: 0

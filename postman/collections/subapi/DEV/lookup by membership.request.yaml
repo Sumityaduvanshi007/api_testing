@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://services-ac-dev-01.highwire.org:8080/cyclades/subapi?action=lookup&publisher-id=ajhp&membershipno=TDDT&expand=true&data-type=json
+method: GET
+queryParams:
+  action: lookup
+  publisher-id: ajhp
+  membershipno: TDDT
+  expand: "true"
+  data-type: json
+order: 11000

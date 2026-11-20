@@ -1,0 +1,5 @@
+$kind: http-request
+description: Active extractor URL
+url: "{{a4d_base}}/config/extractor"
+method: GET
+order: 5000

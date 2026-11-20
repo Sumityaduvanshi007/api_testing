@@ -1,0 +1,15 @@
+$kind: http-request
+description: Set logger DEBUG; basic auth highwire/highwire per doc
+url: "{{a4d_base}}/actuator/loggers/org.highwire.platform.a4d"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: '{"configuredLevel":"DEBUG"}'
+auth:
+  type: basic
+  credentials:
+    username: highwire
+    password: "{{auth_password_01nm}}"
+order: 20000

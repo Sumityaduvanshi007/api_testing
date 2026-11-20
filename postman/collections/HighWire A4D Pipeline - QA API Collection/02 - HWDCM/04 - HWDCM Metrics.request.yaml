@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{hwdcm_base_url}}/actuator/metrics"
+method: GET
+order: 4000

@@ -1,0 +1,31 @@
+$kind: http-request
+name: Atom browse Site Type Service -- prod
+url: http://atom-browse.highwire.org/publisher/asnr?fscheme=http:%2F%2Fschema.highwire.org%2FPublishing%23role&fterm=http:%2F%2Fschema.highwire.org%2FItemSet
+method: GET
+queryParams:
+  fscheme: http:%2F%2Fschema.highwire.org%2FPublishing%23role
+  fterm: http:%2F%2Fschema.highwire.org%2FItemSet
+body:
+  type: text
+  content: /hwdjpt/100/100/101.atom
+auth:
+  type: digest
+  credentials:
+    algorithm: MD5
+    username: ddt
+    password: h2opep0xy
+scripts:
+  - type: afterResponse
+    code: "const requestedApath = \"/hwdjpt/100/100/101.atom\";\r
+
+      const body = pm.response.json();\r
+
+      \r
+
+      pm.test(\"Invalid apath must not return success\", function () {\r
+
+      \    pm.expect(body.error).to.eql(true);\r
+
+      });"
+    language: text/javascript
+order: 2000

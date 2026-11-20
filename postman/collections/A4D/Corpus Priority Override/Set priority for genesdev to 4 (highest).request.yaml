@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://a4d-dev.highwire.org/corpus/priority/genesdev
+method: PUT
+headers:
+  Content-Type: text/plain
+body:
+  type: text
+  content: "4"
+order: 1000

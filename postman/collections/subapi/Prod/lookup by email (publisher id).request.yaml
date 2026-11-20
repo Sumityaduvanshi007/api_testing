@@ -1,0 +1,27 @@
+$kind: http-request
+url: http://services-ac-prod-01.highwire.org:8080/cyclades/subapi?action=lookup&email=blackhole@highwire.stanford.edu&expand=true&data-type=json&publisher-id=arbor
+method: GET
+queryParams:
+  - key: action
+    value: lookup
+  - key: email
+    value: blackhole@highwire.stanford.edu
+    description: One of email, userid, login, membershipno is required.
+  - key: userid
+    value: "610"
+    disabled: true
+  - key: login
+    value: talaninst5
+    disabled: true
+  - key: membershipno
+    value: TALANINST5
+    disabled: true
+  - key: expand
+    value: "true"
+    description: true or yes returns the full subscriber. Optional.
+  - key: data-type
+    value: json
+    description: json or xml.
+  - key: publisher-id
+    value: arbor
+order: 13000

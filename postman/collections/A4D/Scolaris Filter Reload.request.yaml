@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://a4d-dev.highwire.org/config/scolaris/reload
+method: POST
+order: 5000

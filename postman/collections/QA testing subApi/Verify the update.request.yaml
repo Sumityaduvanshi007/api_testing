@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://services-ac-dev-01.highwire.org:8080/cyclades/subapi?action=lookup&publisher-id=isa&membershipno=VIRENDRA11&expand=true&data-type=xml
+method: GET
+queryParams:
+  action: lookup
+  publisher-id: isa
+  membershipno: VIRENDRA11
+  expand: "true"
+  data-type: xml
+order: 4503575485401055

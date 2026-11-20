@@ -1,0 +1,5 @@
+$kind: http-request
+description: A4D and circuit-breaker dependency health
+url: "{{consumer_base}}/actuator/health/dependencies"
+method: GET
+order: 3000

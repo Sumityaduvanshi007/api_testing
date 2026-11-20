@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://services-ac-dev-01.highwire.org:8080/cyclades/subapi?action=getPpvTransaction&membershipno=TDDT&data-type=json&publisher-id=isa
+method: GET
+queryParams:
+  action: getPpvTransaction
+  membershipno: TDDT
+  data-type: json
+  publisher-id: isa
+order: 735242479209012

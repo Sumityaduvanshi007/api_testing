@@ -1,0 +1,5 @@
+$kind: http-request
+description: Check circuit-breaker state with A4D available and unavailable. Documented states include OPEN, HALF_OPEN and CLOSED.
+url: "{{consumer_base_url}}/actuator/circuitbreakers"
+method: GET
+order: 7000

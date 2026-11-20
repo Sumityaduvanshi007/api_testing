@@ -1,0 +1,5 @@
+$kind: http-request
+description: Enqueues stale events. The source documentation does not specify the request body or exact parameter schema. Confirm the API contract before preparing positive and negative payload tests.
+url: "{{a4d_base_url}}/queue/"
+method: POST
+order: 10000

@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{hwdcm_base_url}}/actuator/prometheus"
+method: GET
+order: 5000

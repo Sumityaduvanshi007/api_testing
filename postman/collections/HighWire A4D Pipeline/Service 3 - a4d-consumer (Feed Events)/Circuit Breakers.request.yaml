@@ -1,0 +1,5 @@
+$kind: http-request
+description: Circuit breaker status
+url: "{{consumer_base}}/actuator/circuitbreakers"
+method: GET
+order: 7000

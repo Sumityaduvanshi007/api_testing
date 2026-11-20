@@ -1,0 +1,31 @@
+$kind: http-request
+url: http://services-ac-dev-01.highwire.org:8080/cyclades/subapi?action=recordPpvTransaction&membershipno=TDDT&userid=610&data-type=xml&publisher-id=isa
+method: POST
+queryParams:
+  action: recordPpvTransaction
+  membershipno: TDDT
+  userid: "610"
+  data-type: xml
+  publisher-id: isa
+body:
+  type: json
+  content: "<ac:subscribers xmlns:ac=\"http://schema.highwire.org/Subscriber\"
+    xmlns:ppv=\"http://schema.highwire.org/PayPerView\">\r
+
+    \  <ac:subscriber membershipNo=\"TDDT\">\r
+
+    \    <ppv:transactions>\r
+
+    \      <ppv:transaction transactionId=\"TXN-1001\">\r
+
+    \        <ppv:resource uri=\"/ajhp/70/1/1.atom\" type=\"article\"
+    article=\"Sample article\"/>\r
+
+    \      </ppv:transaction>\r
+
+    \    </ppv:transactions>\r
+
+    \  </ac:subscriber>\r
+
+    </ac:subscribers>\r\n"
+order: 716470493747888

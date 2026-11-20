@@ -1,0 +1,6 @@
+$kind: collection
+scripts:
+  - type: http:beforeRequest
+    code: pm.collectionVariables.set('baseUrl', 'http://services-ac-prod-01.highwire.org:8080/cyclades/subapi');
+    language: text/javascript
+order: 2000

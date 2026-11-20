@@ -1,0 +1,4 @@
+$kind: collection
+description: "Cyclades subapi on AC dev. publisher-id is a publisher id (arbor) or a journal code (isa). Import this file in Postman: File > Import."
+variables:
+  baseUrl: ""

@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{a4d_base_url}}/corpus/priority/bmjqir.atom"
+method: PUT
+headers:
+  Content-Type: text/plain
+body:
+  type: text
+  content: "3"
+order: 14000

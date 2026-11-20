@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://a4d-dev.highwire.org/queue/bypass/
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: paths
+      src:
+        - /C:/Users/Virendra.Kumar/Documents/mheasworks.txt
+      description: ""
+      disabled: false
+order: 1860

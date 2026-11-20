@@ -1,0 +1,5 @@
+$kind: http-request
+description: Checks overall consumer health, including dependencies. Documentation states this can return UP or DOWN (503).
+url: "{{consumer_base_url}}/actuator/health"
+method: GET
+order: 1000

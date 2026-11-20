@@ -1,0 +1,5 @@
+$kind: http-request
+description: Application info
+url: "{{a4d_base}}/actuator/info"
+method: GET
+order: 16000

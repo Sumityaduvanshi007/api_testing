@@ -1,0 +1,11 @@
+$kind: http-request
+description: Enqueue stale events
+url: "{{a4d_base}}/queue/"
+method: POST
+headers:
+  Content-Type: application/x-www-form-urlencoded
+body:
+  type: urlencoded
+  content:
+    "": ""
+order: 8000
